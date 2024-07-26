@@ -6,7 +6,7 @@
 
 Vue.component("purple_header_component_1721995792", {
     template: `
-    <header class="w-full z-30" id="header-section-container">
+    <header class="w-full z-30" id="header-section-container" style="height: 70px">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 bg-white">
             <div class="flex items-center justify-between h-16 md:h-20">
     
@@ -48,7 +48,7 @@ Vue.component("purple_header_component_1721995792", {
                         </svg>
                     </button>
     
-                    <nav id="mobile-nav" class="absolute top-full z-20 left-0 w-full px-4 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out" x-ref="mobileNav" :style="expanded ? 'max-height: ' + $refs.mobileNav.scrollHeight + 'px; opacity: 1' : 'max-height: 0; opacity: .8'" @click.outside="expanded = false" @keydown.escape.window="expanded = false" x-cloak>
+                    <nav id="mobile-nav" class="absolute top-full z-20 left-0 w-full px-4 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out" x-ref="mobileNav" : @click.outside="expanded = false" @keydown.escape.window="expanded = false" x-cloak>
                         <ul id="mobile-nav-list" class="border border-transparent rounded-lg px-4 py-1.5" :class="signUpButtonGradient">
                             <li><a id="mobile-Explore-link" class="flex font-medium text-sm py-1.5" href="Explore.html" :class="[textStylePrimary,hoverTextStylePrimary]">Explore</a></li>
                             <li><a id="mobile-Features-link" class="flex font-medium text-sm py-1.5" href="Features.html" :class="[textStylePrimary,hoverTextStylePrimary]">Features</a></li>
